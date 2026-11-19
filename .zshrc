@@ -4,6 +4,15 @@ HISTSIZE=50000
 SAVEHIST=50000
 setopt share_history hist_ignore_all_dups
 
+# 履歴の前方一致検索（入力済み文字列に一致する履歴を ↑ / ↓ で遡る）
+autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey '^[[A' up-line-or-beginning-search
+bindkey '^[OA' up-line-or-beginning-search
+bindkey '^[[B' down-line-or-beginning-search
+bindkey '^[OB' down-line-or-beginning-search
+
 # 補完
 autoload -Uz compinit && compinit
 
