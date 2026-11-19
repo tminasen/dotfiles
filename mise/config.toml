@@ -1,0 +1,11 @@
+[tools]
+node = "26"
+pnpm = "latest"
+java = "temurin-25"
+rust = "stable"
+python = "3.14"
+
+[settings]
+# 既存リポジトリのバージョンファイルを読む
+idiomatic_version_file_enable_tools = ["node", "rust", "python", "java"]
+

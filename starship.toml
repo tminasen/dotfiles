@@ -1,0 +1,44 @@
+format = """
+$username $time $directory $git_branch $git_status
+$character"""
+
+[username]
+show_always = true          # デフォルトではSSH接続時しか表示されない
+format = '[$user]($style)'
+style_user = "bold green"
+
+[time]
+disabled = false            # デフォルトは無効
+time_format = "%H時%M分%S秒"
+format = '[\[$time\]]($style)'
+style = "yellow"
+
+[directory]
+truncation_length = 0       # パスを省略しない
+truncate_to_repo = false    # gitリポジトリ内でもフルパス表示
+format = '[\[$path\]]($style)'
+style = "cyan"
+
+[character]
+success_symbol = '[->](bold green)'
+error_symbol = '[->](bold red)'    # 直前のコマンドが失敗すると赤になる
+
+[git_branch]
+format = '[\[$branch\]]($style)'
+style = "bold purple"
+
+[git_status]
+# ( ) で囲むと、差分がないときは何も表示されない
+format = '( [\[$all_status$ahead_behind\]]($style))'
+style = "bold red"
+modified = '!${count}'      # 変更あり（未ステージ）
+staged = '+${count}'        # ステージ済み
+untracked = '?${count}'     # 未追跡ファイル
+deleted = '✘${count}'       # 削除
+renamed = '»${count}'       # リネーム
+conflicted = '=${count}'    # コンフリクト
+stashed = '\$${count}'      # stashあり
+ahead = '⇡${count}'         # push待ちのコミット
+behind = '⇣${count}'        # pull待ちのコミット
+diverged = '⇕⇡${ahead_count}⇣${behind_count}'
+
