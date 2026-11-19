@@ -46,9 +46,6 @@ alias gf='git fetch --all --prune'
 ## --- stash ---
 alias gsta='git stash push -u'
 alias gstp='git stash pop'
-## --- fetch ---
-alias gf='git fetch'
-alias gfp='git fetch --prune'
 
 # --- pnpm ---
 alias p='pnpm'
