@@ -56,4 +56,5 @@ alias px='pnpm dlx'
 
 # --- その他 ---
 alias reload='source ~/.zshrc && source ~/.zprofile'   # 設定変更をすぐ反映
+alias history='history 1'    # 既定の直近16件ではなく全件表示
 
