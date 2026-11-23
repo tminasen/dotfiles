@@ -17,3 +17,5 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 # SDK
 brew "dart-lang/dart/dart"
+# Replacement for Docker Desktop
+cask "orbstack"
