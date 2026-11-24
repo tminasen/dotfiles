@@ -17,3 +17,6 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 # SDK
 brew "dart-lang/dart/dart"
+cask "font-jetbrains-mono-nerd-font"
+# Replacement for Docker Desktop
+cask "orbstack"
