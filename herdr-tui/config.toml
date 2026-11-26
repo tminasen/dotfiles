@@ -1,0 +1,18 @@
+onboarding = false
+
+[ui.toast]
+delivery = "system"
+
+[ui]
+show_agent_labels_on_pane_borders = true
+
+[keys]
+# Jetbrains like shortcut
+split_vertical = "alt+shift+v"
+split_horizontal = "alt+shift+h"
+close_pane = "alt+w"
+focus_pane_left = "alt+h"
+focus_pane_down = "alt+j"
+focus_pane_up = "alt+k"
+focus_pane_right = "alt+l"
+
